@@ -1,8 +1,8 @@
 // Navigation code here
 .nav-content {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    // direction, wrap, justify, align
+    .flex(column, nowrap, center, center);
+
     // border: 1px solid red;
     margin: 1% 0% 2% 0%;
 
@@ -10,9 +10,7 @@
         width: 30%;
         margin-top: 1.75%;
         // border: 1px solid black;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        .flex(row, nowrap, space-between, center);
     }
 
     a {

@@ -1,1 +1,22 @@
 // Mixins Here
+
+.btn(@fontColor, @bgColor, @borderRadius) {
+    color: @fontColor;
+    font-size: 2rem;
+    background-color: @bgColor;
+    font-weight: 550;
+    width: 27%;
+    height: 11%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: @borderRadius;
+  }
+
+  .flex(@direction, @wrap, @justify, @align) {
+    display: flex;
+    flex-flow: @direction @wrap;
+    align-items: @align;
+    justify-content: @justify   ;
+}
