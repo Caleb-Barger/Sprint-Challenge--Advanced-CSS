@@ -261,6 +261,9 @@ footer {
   .home {
     flex-direction: column;
   }
+  .home .intro .banner-img {
+    width: 100vw;
+  }
   .home .walk {
     width: 100%;
     flex-flow: column wrap;
