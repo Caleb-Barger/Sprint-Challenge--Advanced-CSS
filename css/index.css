@@ -171,7 +171,7 @@ h1 {
   margin: 1% 0% 2% 0%;
 }
 .nav-content nav {
-  width: 30%;
+  width: 400px;
   margin-top: 1.75%;
   display: flex;
   flex-flow: row nowrap;
@@ -240,8 +240,8 @@ footer {
   font-size: 2rem;
   background-color: black;
   font-weight: 550;
-  width: 27%;
-  height: 11%;
+  width: 100px;
+  height: 30px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -256,4 +256,39 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .walk {
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+  }
+  .home .walk .walk-text {
+    width: 90%;
+    align-items: center;
+  }
+  .home .walk .walk-text h3 {
+    margin: 5% 0%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    align-self: center;
+    height: 50px;
+  }
+  .home .walk .walk-img {
+    order: -1;
+    width: 90%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 90%;
+  }
 }
